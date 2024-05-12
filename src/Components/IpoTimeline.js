@@ -119,35 +119,35 @@ export default function IpoTimeline(props) {
             <div className="item-value-ipo-timeline">{"Bidding"}</div>
             <div className="item-value-ipo-timeline">{"ends"}</div>
             <div className="item-name">
-              {companydetails.ipoTimeline.biddingStarts}
+              {companydetails.ipoTimeline.biddingEnds}
             </div>
           </div>
           <div>
             <div className="item-value-ipo-timeline">{"Allotment"}</div>
             <div className="item-value-ipo-timeline">{"finalization"}</div>
             <div className="item-name">
-              {companydetails.ipoTimeline.biddingStarts}
+              {companydetails.ipoTimeline.AllotmentFinalisation}
             </div>
           </div>
           <div>
             <div className="item-value-ipo-timeline">{"Refund"}</div>
             <div className="item-value-ipo-timeline">{"initiation"}</div>
             <div className="item-name">
-              {companydetails.ipoTimeline.biddingStarts}
+              {companydetails.ipoTimeline.RefundInitiation}
             </div>
           </div>
           <div>
             <div className="item-value-ipo-timeline">{"Demat"}</div>
             <div className="item-value-ipo-timeline">{"transfer"}</div>
             <div className="item-name">
-              {companydetails.ipoTimeline.biddingStarts}
+              {companydetails.ipoTimeline.DematTransfer}
             </div>
           </div>
           <div>
             <div className="item-value-ipo-timeline">{"Listing"}</div>
             <div className="item-value-ipo-timeline">{"date"}</div>
             <div className="item-name">
-              {companydetails.ipoTimeline.biddingStarts}
+              {companydetails.ipoTimeline.ListingDate}
             </div>
           </div>
         </div>
