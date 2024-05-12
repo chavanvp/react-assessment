@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import IpoContext from "./Utilities/IpoContext";
+import ipoData from "./Assets/data";
+import IpoListing from "./Components/IpoListing";
+
+import * as React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import IpoDetails from "./Components/IpoDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IpoContext.Provider value={ipoData}>
+      <div style={{height:"5vh"}}></div>
+      <div style={{ width: "60%", margin: "auto"}}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" Component={IpoListing} />
+            <Route path="/details/:id" Component={IpoDetails} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </IpoContext.Provider>
   );
 }
 
