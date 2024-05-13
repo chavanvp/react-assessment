@@ -90,3 +90,28 @@
 .RSPBprogressBar{
     height:5px !important
 }
+
+@media only screen and (max-width: 600px) {
+    .ipo-details {
+        flex-direction:column
+    }
+    .detail-box{
+        width: 100%;
+    }
+    .download-utility{
+        display: none !important
+    }
+    .text-bold-detail{
+        font-size: 20px;
+    }
+    .org-name{
+        font-size: 15px;
+    }
+    .back-arrow{
+        display: none !important
+    }
+    .company-container{
+        width: 100% !important
+    }
+  }
+  

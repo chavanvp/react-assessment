@@ -20,21 +20,21 @@ export default function IpoDetails() {
       <div className="nevigation"> Home &nbsp;&nbsp;&nbsp;{ '>'}&nbsp;&nbsp;&nbsp;Market watch</div>
       <div style={{ display: "flex", flexDirection: "row", height:'100px' }}>
         <Link className="reset-a" style={{display:'flex',alignItems:'center'}} to = {'/'}>
-        <div style={{ width: "10%", display:'flex',alignItems:'center',justifyContent:'center'}}>
+        <div className="back-arrow" style={{ width: "10%", display:'flex',alignItems:'center',justifyContent:'center'}}>
           <div className="arrow"> 
           <ArrowBackIosNewOutlinedIcon/>
           </div>
         </div>
         </Link>
         
-        <div style={{ display: "flex", flexDirection: "row", width: "60%" ,alignItems:"center"}}>
+        <div className="company-container"style={{ display: "flex", flexDirection: "row", width: "60%" ,alignItems:"center"}}>
           <img className="details-logo" alt="logo" src={company.logoURI}></img>
           <div className="company-details">
             <div className="text-bold-detail text-color">{company.name}</div>
-            <div style={{color:'gray'}}>{company.fullName}</div>
+            <div className="org-name"style={{color:'gray'}}>{company.fullName}</div>
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "row", width: "30%", alignItems:'center', justifyContent:'space-around'}}>
+        <div className="download-utility "style={{ display: "flex", flexDirection: "row", width: "30%", alignItems:'center', justifyContent:'space-around'}}>
           <img alt="download" style={{height:'40%'  }}src={img}></img>
           <button className="btn-apply"> Apply Now</button>
         </div>
@@ -82,7 +82,7 @@ export default function IpoDetails() {
           </div>
         </div>
       </div>
-      <div className="ipo-details-container" style={{height:"150px"}}>
+      <div className="ipo-details-container" >
         <div className="heading-text">IPO Timeline</div>
         <div style={{width:'95%', margin:'auto'}}>
           <IpoTimeline companyDetails={company}></IpoTimeline>
